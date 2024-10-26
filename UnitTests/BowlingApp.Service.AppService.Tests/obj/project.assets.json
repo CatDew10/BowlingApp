@@ -377,6 +377,29 @@
             "related": ".xml"
           }
         }
+      },
+      "BowlingApp.Service.AppService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BowlingApp.Service.Store": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BowlingApp.Service.AppService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BowlingApp.Service.AppService.dll": {}
+        }
+      },
+      "BowlingApp.Service.Store/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BowlingApp.Service.Store.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BowlingApp.Service.Store.dll": {}
+        }
       }
     }
   },
@@ -970,10 +993,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BowlingApp.Service.AppService/1.0.0": {
+      "type": "project",
+      "path": "../../Sources/BowlingApp.Service.AppService/BowlingApp.Service.AppService.csproj",
+      "msbuildProject": "../../Sources/BowlingApp.Service.AppService/BowlingApp.Service.AppService.csproj"
+    },
+    "BowlingApp.Service.Store/1.0.0": {
+      "type": "project",
+      "path": "../../Sources/BowlingApp.Service.Store/BowlingApp.Service.Store.csproj",
+      "msbuildProject": "../../Sources/BowlingApp.Service.Store/BowlingApp.Service.Store.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BowlingApp.Service.AppService >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "NUnit >= 3.14.0",
       "NUnit.Analyzers >= 3.9.0",
@@ -1008,7 +1042,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\repo\\BowlingApp\\Sources\\BowlingApp.Service.AppService\\BowlingApp.Service.AppService.csproj": {
+              "projectPath": "C:\\repo\\BowlingApp\\Sources\\BowlingApp.Service.AppService\\BowlingApp.Service.AppService.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

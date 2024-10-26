@@ -1,4 +1,4 @@
-namespace BowlingApp.Service.Store
+namespace BowlingApp.Service.Store.Tests
 {
     public class Tests
     {

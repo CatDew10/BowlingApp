@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BowlingApp.Service.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f2ffeb64b51458a1fa8bc3b6f35e73e32dac55e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+410942b1949e22c69cb251b0e9073e5ee42344ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("BowlingApp.Service.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BowlingApp.Service.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

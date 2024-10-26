@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{070F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{59618569-B89C-43AA-92EE-12B8BBF8C0E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingApp.Service.Api", "Sources\BowlingApp.Service.Api\BowlingApp.Service.Api.csproj", "{0777AEC3-E736-44E2-B3B7-383D9E3945B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BowlingApp.Service.Api", "Sources\BowlingApp.Service.Api\BowlingApp.Service.Api.csproj", "{0777AEC3-E736-44E2-B3B7-383D9E3945B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingApp.Service.AppService", "Sources\BowlingApp.Service.AppService\BowlingApp.Service.AppService.csproj", "{121D9CA1-1CDC-4578-A756-7E60DE222912}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BowlingApp.Service.AppService", "Sources\BowlingApp.Service.AppService\BowlingApp.Service.AppService.csproj", "{121D9CA1-1CDC-4578-A756-7E60DE222912}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingApp.Service.Store", "Sources\BowlingApp.Service.Store\BowlingApp.Service.Store.csproj", "{E5419CEE-2A7E-433B-8359-BC849E858B91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BowlingApp.Service.Store", "Sources\BowlingApp.Service.Store\BowlingApp.Service.Store.csproj", "{E5419CEE-2A7E-433B-8359-BC849E858B91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingApp.Service.Api.Tests", "UnitTests\BowlingApp.Service.Api.Tests\BowlingApp.Service.Api.Tests.csproj", "{925FCA9B-19D0-448D-B577-56C43FB2E4AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BowlingApp.Service.Api.Tests", "UnitTests\BowlingApp.Service.Api.Tests\BowlingApp.Service.Api.Tests.csproj", "{925FCA9B-19D0-448D-B577-56C43FB2E4AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingApp.Service.AppService.Tests", "UnitTests\BowlingApp.Service.AppService.Tests\BowlingApp.Service.AppService.Tests.csproj", "{0773F500-3F7A-4180-AAE5-AF7C00988F15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BowlingApp.Service.AppService.Tests", "UnitTests\BowlingApp.Service.AppService.Tests\BowlingApp.Service.AppService.Tests.csproj", "{0773F500-3F7A-4180-AAE5-AF7C00988F15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingApp.Service.Store", "UnitTests\BowlingApp.Service.Store\BowlingApp.Service.Store.csproj", "{54BE558A-373B-4871-99A3-EF1DA9B9E829}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingApp.Service.Store.Tests", "UnitTests\BowlingApp.Service.Store.Tests\BowlingApp.Service.Store.Tests.csproj", "{FC8D676D-0023-40B1-BFA2-5D1064117C4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,10 @@ Global
 		{0773F500-3F7A-4180-AAE5-AF7C00988F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0773F500-3F7A-4180-AAE5-AF7C00988F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0773F500-3F7A-4180-AAE5-AF7C00988F15}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54BE558A-373B-4871-99A3-EF1DA9B9E829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54BE558A-373B-4871-99A3-EF1DA9B9E829}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54BE558A-373B-4871-99A3-EF1DA9B9E829}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54BE558A-373B-4871-99A3-EF1DA9B9E829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8D676D-0023-40B1-BFA2-5D1064117C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8D676D-0023-40B1-BFA2-5D1064117C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8D676D-0023-40B1-BFA2-5D1064117C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8D676D-0023-40B1-BFA2-5D1064117C4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,7 +59,7 @@ Global
 		{E5419CEE-2A7E-433B-8359-BC849E858B91} = {070F04C1-B5CB-4957-9139-D67E3C323D6D}
 		{925FCA9B-19D0-448D-B577-56C43FB2E4AD} = {59618569-B89C-43AA-92EE-12B8BBF8C0E8}
 		{0773F500-3F7A-4180-AAE5-AF7C00988F15} = {59618569-B89C-43AA-92EE-12B8BBF8C0E8}
-		{54BE558A-373B-4871-99A3-EF1DA9B9E829} = {59618569-B89C-43AA-92EE-12B8BBF8C0E8}
+		{FC8D676D-0023-40B1-BFA2-5D1064117C4A} = {59618569-B89C-43AA-92EE-12B8BBF8C0E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {386A0A1C-F81C-4F56-B13F-49D6E6F47949}

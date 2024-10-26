@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BowlingApp.Service.Store\BowlingApp.Service.Store.csproj" />
+  </ItemGroup>
+
 </Project>
