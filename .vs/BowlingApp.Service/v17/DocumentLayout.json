@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "UnitTests\\BowlingApp.Service.Store.Tests\\UnitTest1.cs",
               "ToolTip": "C:\\repo\\BowlingApp\\UnitTests\\BowlingApp.Service.Store.Tests\\UnitTest1.cs",
               "RelativeToolTip": "UnitTests\\BowlingApp.Service.Store.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T20:03:28.383Z",
               "EditorCaption": ""
@@ -52,15 +52,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BowlingApp.Service.Api",
+              "Title": "BowlingApp.Service.Api.csproj",
               "DocumentMoniker": "C:\\repo\\BowlingApp\\Sources\\BowlingApp.Service.Api\\BowlingApp.Service.Api.csproj",
               "RelativeDocumentMoniker": "Sources\\BowlingApp.Service.Api\\BowlingApp.Service.Api.csproj",
               "ToolTip": "C:\\repo\\BowlingApp\\Sources\\BowlingApp.Service.Api\\BowlingApp.Service.Api.csproj",
               "RelativeToolTip": "Sources\\BowlingApp.Service.Api\\BowlingApp.Service.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-26T20:00:47.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T20:00:47.698Z"
             },
             {
               "$type": "Document",
