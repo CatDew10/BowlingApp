@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "1ec60d74-ddfd-49fb-8444-2ea548f85a5e",
+		"name": "BowlingApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6709962"
+	},
+	"item": [
+		{
+			"name": "InitializeGame",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"  });\r",
+							"\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Validate the response schema\", function () {\r",
+							"    const responseData = pm.response.json();\r",
+							"    \r",
+							"    pm.expect(responseData).to.be.an('object');\r",
+							"    pm.expect(responseData).to.have.property('id');\r",
+							"    pm.expect(responseData).to.have.property('frames');\r",
+							"    pm.expect(responseData).to.have.property('currentFrame');\r",
+							"    pm.expect(responseData).to.have.property('isComplete');\r",
+							"    pm.expect(responseData).to.have.property('totalScore');\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Each frame in the 'frames' array contains the expected properties\", function () {\r",
+							"    const responseData = pm.response.json();\r",
+							"\r",
+							"    pm.expect(responseData.frames).to.be.an('array').that.is.not.empty;\r",
+							"    \r",
+							"    responseData.frames.forEach(function(frame) {\r",
+							"        pm.expect(frame).to.have.property('frameNumber');\r",
+							"        pm.expect(frame).to.have.property('firstDelivery');\r",
+							"        pm.expect(frame).to.have.property('secondDelivery');\r",
+							"        pm.expect(frame).to.have.property('thirdDelivery');\r",
+							"        pm.expect(frame).to.have.property('score');\r",
+							"        pm.expect(frame).to.have.property('isStrike');\r",
+							"        pm.expect(frame).to.have.property('isSpare');\r",
+							"        pm.expect(frame).to.have.property('isOpen');\r",
+							"        pm.expect(frame).to.have.property('isSplit');\r",
+							"    });\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Ensure that 'isStrike,' 'isSpare,' 'isOpen,' and 'isSplit' properties in each frame are boolean values\", function () {\r",
+							"    const responseData = pm.response.json();\r",
+							"    \r",
+							"    pm.expect(responseData.frames).to.be.an('array');\r",
+							"    responseData.frames.forEach(function(frame) {\r",
+							"        pm.expect(frame.isStrike).to.be.a('boolean');\r",
+							"        pm.expect(frame.isSpare).to.be.a('boolean');\r",
+							"        pm.expect(frame.isOpen).to.be.a('boolean');\r",
+							"        pm.expect(frame.isSplit).to.be.a('boolean');\r",
+							"    });\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7134/Bowling/initialize",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7134",
+					"path": [
+						"Bowling",
+						"initialize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RecordDelivery",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {\r",
+							"    pm.expect(pm.response.code).to.equal(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Response body schema is valid\", function () {\r",
+							"    pm.expect(pm.response.text()).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Response body is not empty\", function () {\r",
+							"    pm.expect(pm.response.text()).to.not.be.empty;\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "8",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7134/Bowling/:gameId/record",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7134",
+					"path": [
+						"Bowling",
+						":gameId",
+						"record"
+					],
+					"variable": [
+						{
+							"key": "gameId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFrameScore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7134/Bowling/:gameId/frame/:frameNumber",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7134",
+					"path": [
+						"Bowling",
+						":gameId",
+						"frame",
+						":frameNumber"
+					],
+					"variable": [
+						{
+							"key": "gameId",
+							"value": "1"
+						},
+						{
+							"key": "frameNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTotalScore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7134/Bowling/1/total",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7134",
+					"path": [
+						"Bowling",
+						"1",
+						"total"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
