@@ -30,7 +30,7 @@ public class BowlingControllerTests
         _controller.Dispose();
     }
 
-    [Test]    
+    [Test]
     public void InitializeGame_ShouldReturnNewGame()
     {
         // Arrange
@@ -39,6 +39,8 @@ public class BowlingControllerTests
 
         // Act
         var result = _controller.InitializeGame();
+
+        List<string> expectedNames = new();
 
         // Assert
         Assert.IsInstanceOf<OkObjectResult>(result.Result);
